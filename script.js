@@ -3,6 +3,10 @@ const jokeEl = document.getElementById("joke");
 
 const apiURL = "https://dad-jokes-iota-wine.vercel.app/joke";
 
+const options = {
+    method: "GET"
+};
+
 
 async function getJoke(){
 
@@ -11,7 +15,7 @@ async function getJoke(){
         jokeEl.innerText = "Updating...";
         btnEl.disabled = true;
         btnEl.innerText = "Loading...";
-        const response = await fetch(apiURL, options);
+        const response = await fetch(apiURL);
         const data = await response.json();
 
         btnEl.disabled = false;
