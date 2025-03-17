@@ -1,16 +1,7 @@
 const btnEl = document.getElementById("btn");
 const jokeEl = document.getElementById("joke");
 
-
-const options = {
-    method: "GET",
-    headers: {
-        "X-Api-Key": apiKey,
-
-    }
-};
-
-const apiURL = "https://tonserveur.com/joke"; // Remplace par ton domaine ou localhost
+const apiURL = "https://dad-jokes-iota-wine.vercel.app/joke";
 
 
 async function getJoke(){
