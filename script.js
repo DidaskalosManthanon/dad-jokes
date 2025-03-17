@@ -1,7 +1,6 @@
 const btnEl = document.getElementById("btn");
 const jokeEl = document.getElementById("joke");
 
-const apiKey = "UuWjKdF9bX+dx30Bvo0OKA==dGQv7FbpFaPqHTXY";
 
 const options = {
     method: "GET",
@@ -11,7 +10,8 @@ const options = {
     }
 };
 
-const apiURL = "https://api.api-ninjas.com/v1/dadjokes";
+const apiURL = "https://tonserveur.com/joke"; // Remplace par ton domaine ou localhost
+
 
 async function getJoke(){
 
